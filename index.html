@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificando</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <form>
+          <h1 class="codificando">Codificando</h1>
+          <br>
+          <fieldset>
+            <fieldset id="escolha">
+              <label class="escolha">Escolha:</label>
+              <br>
+                <div class="cod">
+                  <input type="radio" name="option" value="codificar" class="codOuDecod" checked/>
+                  <label>Codificar</label>
+                </div>
+                <div class="decod">
+                  <input type="radio" name="option" value="decodificar" class="codOuDecod"/>
+                  <label>Decodificar</label>
+                </div>
+            </fieldset>
+  
+            <fieldset>
+              <label class="metod">Escolha o método.</label>
+              <div class="meto">
+                <select name="metodo" id="CifraCesarouB64">
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="cifraDeCesar">Cifra de César</option>
+                  <option value="base64">Base 64</option>
+                </select>
+              </div>
+            </fieldset>
+    
+            <div class="step"><fieldset id="selecionePasso">
+              <label for="passo">Selecione o passo (entre 1 e 25):</label>
+              <br>
+              <input type="number" id="passo" name="numPasso" value="1" max="25" />
+            </fieldset></div>
+            
+            <div class="msgAndResult">
+              <fieldset>
+                <label for="mensagem">Escreva a mensagem:</label>
+                <br>
+                <textarea
+                id="texto" 
+                name="mensagem" 
+                rows="7" 
+                cols="50"
+                placeholder="Digite aqui">
+                </textarea>
+              </fieldset>
+      
+              <fieldset>
+                <br>
+                <textarea
+                id="resultadoMensagem" 
+                name="resultado" 
+                rows="7"
+                cols="50" 
+                readonly></textarea>
+              </fieldset>
+            </div>
+            
+            <div class="click"><button type="button" id="botao">Codificar</button></div>
+          </fieldset>
+        </form>
+   <script src="./translate.js"></script>
+</body>
+</html>

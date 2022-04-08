@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4NWq4F9L7dNwW3VfyiWrQsMd0lezrQ00yA&usqp=CAU)
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.codificando{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: 'Staatliches', cursive;
+    font-size: 60px;
+    color: #03045E;
+    background-color: #CAF0F8;
+    border:solid;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.cod, .decod, .escolha, .metod, .meto, .step, .click{
+    display: flex;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #CAF0F8;
+    background-color: #03045E;
+}
+.msgAndResult{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Anton', sans-serif;
+    color: #03045E;
+    background-color: #54BAB9;
+}
+@media (max-width: 430px){
+    body{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
